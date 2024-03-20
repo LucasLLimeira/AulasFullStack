@@ -2,10 +2,14 @@ public class ProgOrientAObjt {
     public static void main(String[] args){
 
         Cao cachorro = new Cao();
-        cachorro.Anda();
+        cachorro.setIdade(5);
 
-        Cao dog = new Cao("Lulu", 12);
-        dog.DadosCao();
+        if(cachorro.VerificarIdade()){
+            System.out.println("Ele é idoso");
+        }
+        else{
+            System.out.println("Ele é novinho");
+        }
 
     }
 
